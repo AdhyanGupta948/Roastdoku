@@ -20,9 +20,7 @@ Whether you make a wrong move, take too long, or just pick the “Easy” mode�
 
 ⏱️ Timer-based scoring system
 
-🎨 Clean and minimal UI built with Jetpack Compose
-
-🎵 Optional sound settings
+🎨 Clean and minimal UI 
 
 📱 Fully playable and responsive on Android devices
 
@@ -38,17 +36,6 @@ Time milestones
 Game completion
 
 And sometimes… just vibes
-
-🛠️ Tech Stack
-Kotlin
-
-Jetpack Compose
-
-MVVM architecture
-
-StateFlow for reactive UI updates
-
-Custom Sudoku Generator + Solver
 
 📦 Build
 The app is fully native and production-ready.
