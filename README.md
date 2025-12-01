@@ -1,5 +1,6 @@
 # Roastdoku
 
+## 📥 Download APK
 [![Download APK](https://img.shields.io/badge/Download-APK-blue?style=for-the-badge)](https://github.com/AdhyanGupta948/Roastdoku/releases/tag/v1.0.0)
 
 A fully native Android Sudoku game with a built-in roast bot that playfully comments on your gameplay.
