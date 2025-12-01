@@ -5,7 +5,8 @@
 
 A fully native Android Sudoku game with a built-in roast bot that playfully comments on your gameplay.
 
-Roastdoku – The Sudoku That Roasts You 🔥🧩
+Roastdoku – The Sudoku That Roasts You 🔥
+
 Roastdoku is a modern, clean, minimalistic Sudoku game — with a twist:
 the game gently (or not-so-gently) roasts you while you play.
 
