@@ -45,9 +45,6 @@ Clone → Build → Run.
 
 1. Open the project in Android Studio
 2. Update `local.properties` with your Android SDK path:
-   ```
-   sdk.dir=/Users/YOUR_USERNAME/Library/Android/sdk
-   ```
 3. Sync Gradle
 4. Build and run on an emulator or device
 
