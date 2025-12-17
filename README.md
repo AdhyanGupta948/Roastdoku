@@ -1,5 +1,9 @@
 # Roastdoku
 
+## Author
+Created by Adhyan Gupta
+© 2025 Adhyan Gupta
+
 ## 📥 Download APK [![Download APK](https://img.shields.io/badge/Download-APK-blue?style=for-the-badge)](https://github.com/AdhyanGupta948/Roastdoku/releases/tag/v1.0.0)
 
 
