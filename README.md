@@ -1,28 +1,55 @@
 # Roastdoku
 
+## Author
+Created by Adhyan Gupta
+© 2025 Adhyan Gupta
+
+## 📥 Download APK [![Download APK](https://img.shields.io/badge/Download-APK-blue?style=for-the-badge)](https://github.com/AdhyanGupta948/Roastdoku/releases/tag/v1.0.0)
+
+
 A fully native Android Sudoku game with a built-in roast bot that playfully comments on your gameplay.
 
-## Features
+Roastdoku – The Sudoku That Roasts You 🔥
 
-- **Native Android App** - Built with Kotlin and Jetpack Compose
-- **Sudoku Engine** - Complete generator and solver with difficulty levels (Easy, Medium, Hard)
-- **Roast Bot** - Humorous commentary during gameplay
-- **Material 3 UI** - Modern, minimalistic design with smooth animations
-- **Theme Support** - Light, Dark, and AMOLED Black themes
-- **Game Features**:
-  - Timer tracking
-  - Mistake counter
-  - Cell highlighting
-  - Confetti animation on completion
-  - Number pad for input
+Roastdoku is a modern, clean, minimalistic Sudoku game — with a twist:
+the game gently (or not-so-gently) roasts you while you play.
 
-## Setup
+Whether you make a wrong move, take too long, or just pick the “Easy” mode… the in‑game AI narrator always has something to say.
+
+✨ Features
+🎮 Three difficulty levels: Easy, Medium, Hard
+
+🧠 Intelligent Sudoku puzzle generator & solver
+
+🔥 Dynamic roast engine that comments on your gameplay
+
+⏱️ Timer-based scoring system
+
+🎨 Clean and minimal UI 
+
+📱 Fully playable and responsive on Android devices
+
+🤖 Roast Engine
+Your friendly in‑game narrator reacts to:
+
+Wrong moves
+
+Long inactivity
+
+Time milestones
+
+Game completion
+
+And sometimes… just vibes
+
+📦 Build
+The app is fully native and production-ready.
+Clone → Build → Run.
+
+## Setup on Android studio 
 
 1. Open the project in Android Studio
 2. Update `local.properties` with your Android SDK path:
-   ```
-   sdk.dir=/Users/YOUR_USERNAME/Library/Android/sdk
-   ```
 3. Sync Gradle
 4. Build and run on an emulator or device
 
