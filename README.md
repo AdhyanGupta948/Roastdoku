@@ -4,7 +4,7 @@
   <h1>Roastdoku</h1>
   <p><b>The Sudoku That Roasts You 🔥</b></p>
   <p>
-    <a href="https://github.com/AdhyanGupta948/Roastdoku/releases/tag/v1.0.0">
+    <a href="https://github.com/AdhyanGupta948/Roastdoku/releases/tag/v1.1.0">
       <img src="https://img.shields.io/badge/Download-APK-blue?style=for-the-badge" alt="Download APK">
     </a>
   </p>
