@@ -13,6 +13,7 @@
         REQUEST_INSTALL_PACKAGES request this is necessory for the update feature to work 
          but you can bypass it by tapping "More details" -> "Install anyway". 
   </b></p>
+  <b><p>This is a FOSS so you dont have to worry about security </p></b>
 </div>
 
 ## About
