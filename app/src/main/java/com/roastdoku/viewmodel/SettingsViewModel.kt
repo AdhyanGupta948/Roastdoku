@@ -16,12 +16,19 @@ class SettingsViewModel : ViewModel() {
     private val _themeMode = MutableStateFlow(ThemeMode.DARK)
     val themeMode: StateFlow<ThemeMode> = _themeMode.asStateFlow()
     
+    private val _autoUpdateEnabled = MutableStateFlow(true)
+    val autoUpdateEnabled: StateFlow<Boolean> = _autoUpdateEnabled.asStateFlow()
+    
     fun toggleRoast() {
         _roastEnabled.value = !_roastEnabled.value
     }
     
     fun setTheme(mode: ThemeMode) {
         _themeMode.value = mode
+    }
+    
+    fun toggleAutoUpdate() {
+        _autoUpdateEnabled.value = !_autoUpdateEnabled.value
     }
 }
 

@@ -1,5 +1,6 @@
 package com.roastdoku.ui.game
 
+import androidx.activity.compose.BackHandler
 import androidx.compose.animation.*
 import androidx.compose.animation.core.*
 import androidx.compose.foundation.background
@@ -32,6 +33,66 @@ fun GameScreen(
     val currentRoast by viewModel.currentRoast.collectAsState()
     val showNumberPad by viewModel.showNumberPad.collectAsState()
 
+    var showQuitDialog by remember { mutableStateOf(false) }
+
+    // Handle Android back button
+    BackHandler(enabled = !isComplete) {
+        showQuitDialog = true
+    }
+
+    // Quit Confirmation Dialog
+    if (showQuitDialog) {
+        AlertDialog(
+            onDismissRequest = { showQuitDialog = false },
+            title = {
+                Text(
+                    text = "Quit Game?",
+                    fontSize = 24.sp,
+                    fontWeight = FontWeight.SemiBold,
+                    textAlign = TextAlign.Center,
+                    modifier = Modifier.fillMaxWidth()
+                )
+            },
+            text = {
+                Text(
+                    text = "Leaving already I think you gave up.",
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.Normal,
+                    color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f),
+                    textAlign = TextAlign.Center
+                )
+            },
+            confirmButton = {
+                Button(
+                    onClick = {
+                        showQuitDialog = false
+                        onBack()
+                    },
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = CellError
+                    )
+                ) {
+                    Text(
+                        text = "Quit",
+                        fontSize = 16.sp,
+                        fontWeight = FontWeight.SemiBold
+                    )
+                }
+            },
+            dismissButton = {
+                TextButton(onClick = { showQuitDialog = false }) {
+                    Text(
+                        text = "Cancel",
+                        fontSize = 16.sp,
+                        fontWeight = FontWeight.Normal
+                    )
+                }
+            },
+            containerColor = MaterialTheme.colorScheme.surface,
+            shape = RoundedCornerShape(24.dp)
+        )
+    }
+
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -48,7 +109,7 @@ fun GameScreen(
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.SpaceBetween
             ) {
-                IconButton(onClick = onBack) {
+                IconButton(onClick = { showQuitDialog = true }) {
                     Icon(
                         imageVector = Icons.Default.ArrowBack,
                         contentDescription = "Back",

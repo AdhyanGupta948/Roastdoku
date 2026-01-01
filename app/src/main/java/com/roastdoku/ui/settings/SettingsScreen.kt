@@ -10,6 +10,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.unit.dp
 import com.roastdoku.viewmodel.SettingsViewModel
@@ -23,6 +24,7 @@ fun SettingsScreen(
 ) {
     val roastEnabled by viewModel.roastEnabled.collectAsState()
     val themeMode by viewModel.themeMode.collectAsState()
+    val autoUpdateEnabled by viewModel.autoUpdateEnabled.collectAsState()
     
     var showInfoPage by remember { mutableStateOf(false) }
 
@@ -59,6 +61,13 @@ fun SettingsScreen(
                     onCheckedChange = { viewModel.toggleRoast() }
                 )
                 
+                SettingsItem(
+                    title = "Auto-Update Check",
+                    description = "Check for app updates on startup",
+                    checked = autoUpdateEnabled,
+                    onCheckedChange = { viewModel.toggleAutoUpdate() }
+                )
+                
                 Divider()
                 
                 Text(
@@ -92,6 +101,24 @@ fun SettingsScreen(
                 ) {
                     Text("About the Developer")
                 }
+                
+                // Version Info
+                val context = LocalContext.current
+                val versionInfo = remember(context) {
+                    try {
+                        val pInfo = context.packageManager.getPackageInfo(context.packageName, 0)
+                        "Version ${pInfo.versionName}"
+                    } catch (e: Exception) {
+                        "Version Unknown"
+                    }
+                }
+                
+                Text(
+                    text = versionInfo,
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    modifier = Modifier.align(Alignment.CenterHorizontally)
+                )
             }
         }
     }
@@ -101,14 +128,26 @@ fun SettingsScreen(
 fun SettingsItem(
     title: String,
     checked: Boolean,
-    onCheckedChange: (Boolean) -> Unit
+    onCheckedChange: (Boolean) -> Unit,
+    description: String? = null
 ) {
     Row(
         modifier = Modifier.fillMaxWidth(),
         horizontalArrangement = Arrangement.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically
     ) {
-        Text(text = title)
+        Column(
+            modifier = Modifier.weight(1f)
+        ) {
+            Text(text = title)
+            if (description != null) {
+                Text(
+                    text = description,
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+            }
+        }
         Switch(
             checked = checked,
             onCheckedChange = onCheckedChange

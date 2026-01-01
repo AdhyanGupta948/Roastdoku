@@ -1,78 +1,94 @@
 [
     {
-        "merged": "com.roastdoku.app-debug-46:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.roastdoku.app-main-48:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-debug-46:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-main-48:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.roastdoku.app-debug-46:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.roastdoku.app-main-48:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+        "merged": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-debug-46:/xml_file_paths.xml.flat",
+        "source": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-main-48:/xml/file_paths.xml"
     },
     {
-        "merged": "com.roastdoku.app-debug-46:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.roastdoku.app-main-48:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-debug-46:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-main-48:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.roastdoku.app-debug-46:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.roastdoku.app-main-48:/mipmap-mdpi/ic_launcher_foreground.webp"
+        "merged": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-debug-46:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-main-48:/mipmap-mdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "com.roastdoku.app-debug-46:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.roastdoku.app-main-48:/mipmap-xhdpi/ic_launcher_foreground.webp"
+        "merged": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-debug-46:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-main-48:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.roastdoku.app-debug-46:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.roastdoku.app-main-48:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-debug-46:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-main-48:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "com.roastdoku.app-debug-46:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.roastdoku.app-main-48:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-debug-46:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-main-48:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.roastdoku.app-debug-46:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.roastdoku.app-main-48:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-debug-46:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-main-48:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.roastdoku.app-debug-46:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.roastdoku.app-main-48:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-debug-46:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-main-48:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "com.roastdoku.app-debug-46:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.roastdoku.app-main-48:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "com.roastdoku.app-debug-46:/font_inter_regular.ttf.flat",
+        "source": "com.roastdoku.app-main-48:/font/inter_regular.ttf"
     },
     {
-        "merged": "com.roastdoku.app-debug-46:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.roastdoku.app-main-48:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-debug-46:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-main-48:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.roastdoku.app-debug-46:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.roastdoku.app-main-48:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-debug-46:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-main-48:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "com.roastdoku.app-debug-46:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.roastdoku.app-main-48:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-debug-46:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-main-48:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.roastdoku.app-debug-46:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.roastdoku.app-main-48:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-debug-46:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-main-48:/mipmap-hdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "com.roastdoku.app-debug-46:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.roastdoku.app-main-48:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-debug-46:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-main-48:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.roastdoku.app-debug-46:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.roastdoku.app-main-48:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+        "merged": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-debug-46:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-main-48:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.roastdoku.app-debug-46:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.roastdoku.app-main-48:/mipmap-hdpi/ic_launcher_foreground.webp"
+        "merged": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-debug-46:/font_baumans_regular.ttf.flat",
+        "source": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-main-48:/font/baumans_regular.ttf"
     },
     {
-        "merged": "com.roastdoku.app-debug-46:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.roastdoku.app-main-48:/drawable/ic_launcher_background.xml"
+        "merged": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-debug-46:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-main-48:/mipmap-xxhdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "com.roastdoku.app-debug-46:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.roastdoku.app-main-48:/drawable/ic_launcher_foreground.xml"
+        "merged": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-debug-46:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-main-48:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.roastdoku.app-debug-46:/font_inter_bold.ttf.flat",
+        "source": "com.roastdoku.app-main-48:/font/inter_bold.ttf"
+    },
+    {
+        "merged": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-debug-46:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-main-48:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-debug-46:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-main-48:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-debug-46:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "/Users/adhyangupta/.gradle/daemon/8.13/com.roastdoku.app-main-48:/mipmap-xhdpi/ic_launcher_foreground.webp"
     }
 ]

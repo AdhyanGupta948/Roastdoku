@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:2:1-29:12
+ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:2:1-42:12
 MERGED from [androidx.compose.material3:material3:1.1.2] /Users/adhyangupta/.gradle/caches/8.13/transforms/f1013ae2b2c8b0a22aa26b2a5a340ccb/transformed/jetified-material3-1.1.2/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity:1.8.1] /Users/adhyangupta/.gradle/caches/8.13/transforms/a83dfc7e19d45c182267396d04374cf8/transformed/jetified-activity-1.8.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity-ktx:1.8.1] /Users/adhyangupta/.gradle/caches/8.13/transforms/728c3079ff4c92dc3cc655e1cf990253/transformed/jetified-activity-ktx-1.8.1/AndroidManifest.xml:2:1-7:12
@@ -60,9 +60,17 @@ MERGED from [androidx.tracing:tracing:1.0.0] /Users/adhyangupta/.gradle/caches/8
 		INJECTED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.REQUEST_INSTALL_PACKAGES
+ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:6:5-83
+	android:name
+		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:6:22-80
 application
-ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:5:5-27:19
-INJECTED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:5:5-27:19
+ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:8:5-40:19
+INJECTED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:8:5-40:19
 MERGED from [androidx.compose.ui:ui-test-manifest:1.5.4] /Users/adhyangupta/.gradle/caches/8.13/transforms/5c27f8c8503ba2817dbabe1f7467e492/transformed/jetified-ui-test-manifest-1.5.4/AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-test-manifest:1.5.4] /Users/adhyangupta/.gradle/caches/8.13/transforms/5c27f8c8503ba2817dbabe1f7467e492/transformed/jetified-ui-test-manifest-1.5.4/AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.5.4] /Users/adhyangupta/.gradle/caches/8.13/transforms/30ab116d7958f6e6f9d6a4ed4bc123b0/transformed/jetified-ui-tooling-release/AndroidManifest.xml:22:5-26:19
@@ -84,39 +92,55 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/adhyangupta/.gradle/
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.12.0] /Users/adhyangupta/.gradle/caches/8.13/transforms/2dadb1b8a2894ee7e4073f08a33390d8/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:8:9-41
+		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:11:9-41
 	android:roundIcon
-		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:9:9-54
+		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:12:9-54
 	tools:targetApi
-		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:12:9-29
+		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:15:9-29
 	android:icon
-		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:7:9-43
+		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:10:9-43
 	android:allowBackup
-		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:6:9-35
+		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:11:9-47
+		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:14:9-47
 activity#com.roastdoku.MainActivity
-ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:14:9-25:20
+ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:17:9-28:20
 	android:label
-		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:18:13-50
+		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:21:13-38
 	android:exported
-		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:16:13-36
+		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:19:13-36
 	android:theme
-		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:17:13-51
+		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:20:13-51
 	android:name
-		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:15:13-41
+		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:18:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:20:13-23:29
+ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:23:13-26:29
 action#android.intent.action.MAIN
-ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:21:17-69
+ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:24:17-69
 	android:name
-		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:21:25-66
+		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:24:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:22:17-77
+ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:25:17-77
 	android:name
-		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:22:27-74
+		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:25:27-74
+provider#androidx.core.content.FileProvider
+ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:30:9-38:20
+	android:grantUriPermissions
+		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:34:13-47
+	android:authorities
+		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:32:13-61
+	android:exported
+		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:33:13-37
+	android:name
+		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:31:13-62
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:35:13-37:54
+	android:resource
+		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:37:17-51
+	android:name
+		ADDED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml:36:17-67
 uses-sdk
 INJECTED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/adhyangupta/Roastdoku/app/src/main/AndroidManifest.xml

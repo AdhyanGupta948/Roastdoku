@@ -74,6 +74,7 @@ class GameViewModel : ViewModel() {
         _mistakes.value = 0
         _elapsedTime.value = 0L
         _currentRoast.value = null
+        _showNumberPad.value = false // Reset on new game
 
         startTimer()
         resetInactivityTimer()
@@ -107,7 +108,7 @@ class GameViewModel : ViewModel() {
         val cell = _board.value[row][col]
         if (!cell.isGiven) {
             _selectedCell.value = Pair(row, col)
-            _showNumberPad.value = true
+            _showNumberPad.value = true // Show number pad on first tap
             resetInactivityTimer()
         }
     }
@@ -140,7 +141,8 @@ class GameViewModel : ViewModel() {
             checkCompletion()
         }
 
-        _showNumberPad.value = false
+        // REMOVED: _showNumberPad.value = false
+        // Number pad stays visible!
         resetInactivityTimer()
     }
 
@@ -157,7 +159,8 @@ class GameViewModel : ViewModel() {
             _board.value = boardCopy
         }
 
-        _showNumberPad.value = false
+        // REMOVED: _showNumberPad.value = false
+        // Number pad stays visible!
         resetInactivityTimer()
     }
 
@@ -173,6 +176,7 @@ class GameViewModel : ViewModel() {
 
         if (allFilled && noErrors) {
             _isComplete.value = true
+            _showNumberPad.value = false // Hide on completion
             timerJob?.cancel()
 
             showRoast(roastBot.getCompletionRoast())
