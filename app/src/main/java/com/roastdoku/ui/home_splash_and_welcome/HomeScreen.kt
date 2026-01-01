@@ -83,6 +83,7 @@ fun HomeScreen(
     } else if (showSettings) {
         SettingsScreen(
             viewModel = settingsViewModel,
+            updateViewModel = updateViewModel,
             onBack = { showSettings = false }
         )
     } else {

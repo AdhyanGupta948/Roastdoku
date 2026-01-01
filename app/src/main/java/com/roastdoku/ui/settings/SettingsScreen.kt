@@ -6,6 +6,7 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.SystemUpdate
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -13,18 +14,45 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.unit.dp
+import com.roastdoku.ui.update.UpdateDialog
+import com.roastdoku.update.DownloadState
 import com.roastdoku.viewmodel.SettingsViewModel
 import com.roastdoku.viewmodel.ThemeMode
+import com.roastdoku.viewmodel.UpdateViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SettingsScreen(
     viewModel: SettingsViewModel,
+    updateViewModel: UpdateViewModel,
     onBack: () -> Unit
 ) {
     val roastEnabled by viewModel.roastEnabled.collectAsState()
     val themeMode by viewModel.themeMode.collectAsState()
     val autoUpdateEnabled by viewModel.autoUpdateEnabled.collectAsState()
+    
+    // Update states
+    val updateInfo by updateViewModel.updateInfo.collectAsState()
+    val downloadState by updateViewModel.downloadState.collectAsState()
+    val showUpdateDialog by updateViewModel.showDialog.collectAsState()
+    
+    // Auto-trigger installer
+    LaunchedEffect(downloadState) {
+        if (downloadState is DownloadState.Completed) {
+            val filePath = (downloadState as DownloadState.Completed).filePath
+            updateViewModel.triggerInstall(filePath)
+        }
+    }
+    
+    // Show dialog
+    if (showUpdateDialog && updateInfo != null) {
+        UpdateDialog(
+            updateInfo = updateInfo!!,
+            downloadState = downloadState,
+            onUpdateClick = { updateViewModel.startDownload() },
+            onDismiss = { updateViewModel.dismissDialog() }
+        )
+    }
     
     var showInfoPage by remember { mutableStateOf(false) }
 
@@ -67,6 +95,20 @@ fun SettingsScreen(
                     checked = autoUpdateEnabled,
                     onCheckedChange = { viewModel.toggleAutoUpdate() }
                 )
+                
+                // Manual Check Button
+                OutlinedButton(
+                    onClick = { updateViewModel.checkForUpdate() },
+                    modifier = Modifier.fillMaxWidth()
+                ) {
+                    Icon(
+                        imageVector = Icons.Default.SystemUpdate,
+                        contentDescription = null,
+                        modifier = Modifier.size(18.dp)
+                    )
+                    Spacer(modifier = Modifier.width(8.dp))
+                    Text("Check for Updates Now")
+                }
                 
                 Divider()
                 

@@ -23,13 +23,41 @@ import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.roastdoku.R
+import com.roastdoku.ui.update.UpdateDialog
+import com.roastdoku.update.DownloadState
+import com.roastdoku.viewmodel.SettingsViewModel
+import com.roastdoku.viewmodel.UpdateViewModel
 
 
 @Composable
 fun WelcomeScreen(
     onStartClick: () -> Unit
 ) {
+    val updateViewModel: UpdateViewModel = viewModel()
+    val settingsViewModel: SettingsViewModel = viewModel()
+    
+    // Collect update states
+    val updateInfo by updateViewModel.updateInfo.collectAsState()
+    val downloadState by updateViewModel.downloadState.collectAsState()
+    val showUpdateDialog by updateViewModel.showDialog.collectAsState()
+    val autoUpdateEnabled by settingsViewModel.autoUpdateEnabled.collectAsState()
+    
+    // Check for updates on launch
+    LaunchedEffect(Unit) {
+        if (autoUpdateEnabled) {
+            updateViewModel.checkForUpdate()
+        }
+    }
+    
+    // Auto-trigger installer when download completes
+    LaunchedEffect(downloadState) {
+        if (downloadState is DownloadState.Completed) {
+            val filePath = (downloadState as DownloadState.Completed).filePath
+            updateViewModel.triggerInstall(filePath)
+        }
+    }
     // Fade in animation
     var visible by remember { mutableStateOf(false) }
 
@@ -57,6 +85,15 @@ fun WelcomeScreen(
                 )
             )
     ) {
+        // Update Dialog
+        if (showUpdateDialog && updateInfo != null) {
+            UpdateDialog(
+                updateInfo = updateInfo!!,
+                downloadState = downloadState,
+                onUpdateClick = { updateViewModel.startDownload() },
+                onDismiss = { updateViewModel.dismissDialog() }
+            )
+        }
         Column(
             modifier = Modifier
                 .fillMaxSize()
