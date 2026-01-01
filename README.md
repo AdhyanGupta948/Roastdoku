@@ -8,6 +8,11 @@
       <img src="https://img.shields.io/badge/Download-APK-blue?style=for-the-badge" alt="Download APK">
     </a>
   </p>
+  <p><b>IMPORTANT‼️‼️</b></p>
+  <p><b>The google play protect markes the app has harmfull because :-
+        REQUEST_INSTALL_PACKAGES request this is necessory for the update feature to work 
+         but you can bypass it by tapping "More details" -> "Install anyway". 
+  </b></p>
 </div>
 
 ## About
