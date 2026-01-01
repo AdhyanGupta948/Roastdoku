@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Roastdoku</string>
-    <style name="Theme.Roastdoku" parent="android:Theme.Material.Light.NoActionBar"/>
+    <style name="Theme.Roastdoku" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowSplashScreenAnimatedIcon">@android:color/transparent</item>
+    </style>
 </resources>

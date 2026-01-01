@@ -168,7 +168,6 @@ layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
 mipmap ic_launcher
-mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 string androidx_startup
 string app_name

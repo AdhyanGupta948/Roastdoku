@@ -6,7 +6,6 @@ font baumans_regular
 font inter_bold
 font inter_regular
 mipmap ic_launcher
-mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 string app_name
 style Theme.Roastdoku
