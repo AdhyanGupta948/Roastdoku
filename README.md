@@ -1,6 +1,6 @@
 
 <div align="center">
-  <img src="app/src/main/ic_launcher-playstore.png" alt="Roastdoku Logo" width="200" height="200">
+  <img src="docs/images/ic_launcher-playstore.png" alt="Roastdoku Logo" width="200" height="200">
   <h1>Roastdoku</h1>
   <p><b>The Sudoku That Roasts You 🔥</b></p>
   <p>
