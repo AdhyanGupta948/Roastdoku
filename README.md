@@ -17,8 +17,6 @@ Roastdoku is a modern, minimalist Sudoku game for Android with a unique twist �
 
 ## Screenshots
 
-> 📸 _Add your screenshots here — place images in `fastlane/metadata/android/en-US/images/phoneScreenshots/` and reference them below._
-
 | Home Screen | Gameplay | Roast Bot |
 |:-----------:|:--------:|:---------:|
 | ![Home](fastlane/metadata/android/en-US/images/phoneScreenshots/1.png) | ![Game](fastlane/metadata/android/en-US/images/phoneScreenshots/2.png) | ![Roast](fastlane/metadata/android/en-US/images/phoneScreenshots/3.png) |
