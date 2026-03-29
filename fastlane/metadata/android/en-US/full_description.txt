@@ -1,0 +1,20 @@
+Roastdoku is a modern, minimalist Sudoku game for Android with a unique twist — a built-in roast bot that playfully comments on your gameplay.
+
+Whether you make a wrong move, take too long, or pick the Easy difficulty, the roast bot always has something witty to say. It's Sudoku, but it has opinions about you.
+
+FEATURES
+
+- Three Difficulty Levels — Easy, Medium, and Hard
+- Intelligent Puzzle Generator — Unique puzzles every time with a built-in solver
+- Dynamic Roast Engine — The in-game narrator reacts to your mistakes and gameplay style
+- Timer-Based Scoring — Solve faster to score higher
+- Clean, Modern UI — Minimalist design with smooth animations
+- Fully Responsive — Works across a wide range of Android devices
+
+PRIVACY
+
+Roastdoku does not collect any user data, use analytics, display ads, or require an internet connection. All game logic runs entirely on-device. This is free and open-source software (FOSS) licensed under GPL-3.0.
+
+SOURCE CODE
+
+https://github.com/AdhyanGupta948/Roastdoku

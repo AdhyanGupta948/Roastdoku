@@ -1,0 +1,3 @@
+- Complete UI redesign with a new modern design language
+- Improved core game logic for better stability and gameplay flow
+- Fixed multiple bugs and improved overall performance
