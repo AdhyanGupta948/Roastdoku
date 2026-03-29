@@ -62,7 +62,7 @@ Roastdoku is a modern, minimalist Sudoku game for Android with a unique twist â€
 | Kotlin | 1.9.20 |
 | Min SDK | 24 (Android 7.0) |
 | Target SDK | 34 (Android 14) |
-| Gradle | 8.2 |
+| Gradle | 8.13 |
 
 ## What's New in v2.0.0
 
